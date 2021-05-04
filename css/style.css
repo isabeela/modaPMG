@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@font-face {
+	font-family: NuevaBold;
+	src: url(../fonte/nueva-std.otf);
+}
+
+
+  /* Geral */
+
+  body {
+	  width: auto;
+	  padding: 0;
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+
+
+  h2 {
+    text-align: center;
+	font-family: NuevaBold;
+	font-size: 3em;
+
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	
+
+	nav {
+		background-color: rgba(0, 0, 0, 0.8);
+		font-family: 'Poppins', sans-serif;
+		width: 100%;
+		margin: 0;
+		padding: 5px;
+		position: sticky;
+		top: 0;
+	}
+
+
+	nav a:hover {
+		font-weight: bold;
+	}
+
+	.logo {
+		float: left;
+		width: 15%;
+		margin: 20px;
+	}
+
+	ul {
+		float: right;
+	}
+
+	ul li {
+		text-align: center;
+		font-size: 1.2em;
+		display: inline-block;
+		list-style: none;
+		margin: 20px;
+	}
+
+	.menu-principal li  ul{
+		position: absolute; 
+		background: rgba(0,0,0,0.8);
+		display:none;
+	}   
+	
+	.menu-principal li ul li{
+		display:block; 
+		font-size: 1.2rem;
+		text-align: justify;
+	}
+	
+	.menu-principal li:hover ul, .menu li.over ul{display:block;}
+
+
+	
+
+	/* Menu Hamburguer */
+
+	#menu-hamburguer {
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 10px 0 10px 5px;
+		width: auto;
+		font-weight: bolder;
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+	}
+	
+	#menu-hamburguer ul li {
+		text-align: center;
+		font-size: 1.1rem;
+		width: auto;
+		margin-top: 5px;
+	
+	}
+	
+	.logo-cel {
+		width: 30%;
+		float: right;
+	}
+ 
+	#menu-hamburguer li  ul{
+		position: absolute; 
+		background: rgba(0,0,0,0.8);
+		padding: 10px;
+		display:none;
+	}   
+	
+	#menu-hamburguer li ul li{
+		display:inline; 
+		font-size: 1.2rem;
+		text-align: justify;
+	}
+	
+	#menu-hamburguer li:hover ul, #menu-hamburguer li.over ul{display:block;}
+
+
+
+	/* Introdução */
+
+	#conheca-pmg  {
+		width: 100%;
+	}
+
+	#conheca-colecoes {
+		width: 100%;
+	}  
+
+	
+	.conheca {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.descricao {
+		text-align: center;
+		font-size: 1.2rem;
+	} 
+
+
+	.cartoes {
+		width: 33%;
+		float: left;
+	}
+
+	.icone {
+		width: 15%;
+	}
+
+	.colecao {
+		width: 33%;
+		float: left;
+	}
+
+
+	 .botao {
+		border: none;
+		background-color: #d69685;
+		border-radius: 10px;
+		padding: 15px;
+		font-size: 1rem;
+	}
+
+	 .botao:hover {
+		border: 2px solid #d69685;
+		border-radius: 10px;
+		background-color: #fff;
+		color: #d69685;
+	}
+
+	/*Contador */
+
+	#contador {
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+		margin-top: 5%;
+		
+	}
+
+	.contador {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.contar {
+		width: 25%;
+		float: left;
+	}
+
+	.contar h2{
+		color: #fff;
+		margin-bottom: 0;
+	}
+
+	.contar p {
+		font-size: 1.2rem;
+		color: #fff;
+	}
+
+	/* Dicas de Moda */
+
+	#dicas-moda {
+		width: 100%;
+		
+	}
+
+	.dicas-moda {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.dicas-txt {
+		width: 25%;
+		float: left;
+	}
+
+
+	.titulo-dicas {
+		font-family: "Poppins", sans-serif;
+		font-size: 1.2rem;
+	}
+
+
+	.dicas-txt-dir {
+		width: 25%;
+		float: right;
+	}
+
+	.dicas-txt p, .dicas-txt-dir p {
+		margin: 30px;
+	}
+
+	
+	.dicas-img {
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: -200px;
+	}
+
+
+
+	/* Novidades */
+
+	#receber-novidades {
+		background-color: #d69685;
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.texto-novidade {
+		color: #fff;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1rem;
+		margin-top: 10%;
+	}
+
+	.destaque-novidade {
+		color: #fff;
+		text-align: center;
+		margin: 0;
+		font-size: 2.8rem;
+		font-family: NuevaBold;
+	}
+
+	.descricao-novidade {
+		text-align: center;
+		color: #fff;
+	}
+
+	.btn {
+		margin: 5%;
+		text-align: center;
+	}
+
+	.botao-novidade {
+		border: 2px solid #fff;
+		border-radius: 10px;
+		padding: 15px;
+		font-size: 1rem;
+		margin: 10px;
+	}
+
+	.botao-novidade:hover {
+		background-color: #fff;
+		color: #d69685;
+		padding: 15px;
+		font-size: 1rem;
+		margin: 10px;
+	}
+
+
+
+	/* PÁGINA SOBRE */
+
+	.descricao-sobre {
+		width: 50%;
+		float: left;
+		text-align: justify;
+	}
+
+	.titulo-sobre {
+		font-family: "Poppins", sans-serif;
+		font-size: 1.5rem;
+	}
+
+	
+
+	.imagem-sobre {
+		float: left;
+		width: 50%;
+		
+	}
+
+	.borda-img {
+		box-shadow: 15px 15px 0 5px #d69685;
+	}
+
+	.assinatura {
+		font-family: 'Mansalva', cursive;
+		font-size: 1.5rem;
+
+	}
+
+	/* Citação */
+
+	#citacao {
+		width: 100%;
+		margin-top: 50px;
+		height: 500px;
+		background-image: url(../images/sobre/banner-citacao.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+	}
+
+	.citacao {
+		color: #fff;
+		text-shadow: 4px 4px #000;
+		font-size: 2rem;
+		margin: 200px;
+		text-align: center;
+	}
+
+	/* Depoimento */
+
+	#depoimento {
+		width: 100%;
+		padding: 30px;
+	}
+
+	.container-depoimento {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.depoimento {
+		width: 33%;
+		float: left;
+	}
+
+	legend {
+		text-align: center;
+		font-size: 2rem;
+		font-family: 'Cookie', cursive; 
+		color: #362d69;
+
+	}
+
+	/* COLEÇÕES */
+
+	#colecao-basica {
+		width: 100%;
+		margin: 20px;
+	}
+
+	.nossas-colecoes {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.colecao {
+		width: 33%;
+		float: left;
+	}
+
+	.promocao {
+		background-color: #000;
+		color: #fff;
+		padding: 5px;
+		margin: 10px;
+		width: auto;
+
+	}
+
+	/* Tabela */
+
+	#tabela {
+		margin: 0 auto;
+		padding: 50px;
+	}
+
+	table {
+		margin: 0 auto;
+	}
+	
+	tr {
+		background-color: #f5af9c;
+	}
+	
+	tr:hover {
+		background-color: #c48a7a;
+		cursor: pointer;
+	}
+	
+	th, td {
+		padding: 20px;
+		width: 100px;
+	}
+	
+	.titulo-tabela {
+		background-color: #d69685;
+	}
+	
+
+	/* Novidades */
+
+	#novidades, #novidade {
+		width: auto;
+		margin: 0 auto;
+		
+	} 
+
+	.novidades {
+		width: 100%;
+		margin: 0 auto;
+	}  
+
+	form {
+		width: 50%;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	label {
+		font-family: "Poppins", sans-serif;
+	}
+
+	input, textarea, select {
+		border: 1px solid #d69685;
+		padding: 10px;
+		border-radius: 10px;
+	}
+
+	input, textarea {
+		width: 95%; 
+	}
+
+	select {
+		width: 100%;
+	}
+
+	input:focus {
+		background-color: #e3e3e3;
+	}
+
+	textarea {
+		height: 100px;
+		resize: none;
+	}
+
+	.ajuste {
+		float: left;
+	}
+
+	.check {
+		display: inline-block;
+	}
+
+	.centralizar {
+		text-align: center;
+	}
+
+	.botao-enviar {
+		border: 2px solid #d69685;
+		background-color: #fff;
+		color: #d69685;
+		border-radius: 10px;
+		padding: 10px;
+		width: 140px;
+		text-align: center;
+		font-size: 1rem;
+		font-family: "Poppins", sans-serif;
+		margin: 10px;
+	}
+
+	.botao-enviar:hover {
+		color: #fff;
+		background-color: #d69685;
+		border-radius: 10px;
+		padding: 10px;
+		width: 140px;
+		text-align: center;
+		font-size: 1rem;
+		font-family: "Poppins", sans-serif;
+		margin: 10px;
+	}
+
+
+	/* Rodapé */
+
+	footer {
+		background-color: rgba(0, 0, 0, 0.9);
+		width: 100%;
+	}
+
+	.centralizar-logo {
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+		
+	}
+
+
+	@media (max-width: 800px) {
+
+		#menu-hamburguer {
+			position: fixed;
+		}
+
+		h2 {
+			font-size: 2.3em;
+		}
+
+		.banner {
+			display: none;
+		}
+
+		nav {
+			display: none;
+		}
+
+		.cartoes, .colecao, .contador, .dicas-txt, .dicas-txt-dir, .descricao-sobre, .imagem-sobre, .container-depoimento, .depoimento{
+			width: auto;
+		}
+
+		.colecao, .dicas-txt, .dicas-txt-dir {
+			margin-top: 20px;
+		}
+
+		#contador {
+			margin-top: 40px;
+		}
+
+		.imagem-sobre {
+			margin: 30px 0;
+		}
+
+		#citacao{
+			margin: -80px 0;
+		}
+
+		.citacao  {
+			width: 80%;
+			font-size: 1.3rem;
+			margin: 0 auto;
+			text-align: center;
+			padding-top: 50%;
+		}
+
+	
+		.depoimento {
+			margin: 10px 0;
+		}
+
+		.contar {
+			font-size: 0.5rem;
+		}
+
+	   .contar p {
+			font-size: 0.7rem;
+		}
+
+		.dicas-txt-dir {
+			margin-bottom: 5%;
+		}
+
+		.dicas-img  {
+			margin: 5%;
+		}
+
+		.centralizar-logo .icone {
+			
+			width: 60%;
+		}
+
+		.botao-novidade {
+			margin-top: 20px ;
+		}
+
+		.btn {
+			margin: 40px 0;
+			
+		}
+	}
+
+	@media (min-width: 801px) {
+		.banner-celular {
+			display: none;
+		}
+
+		#menu-hamburguer {
+			display: none;
+		}
+	
+		.logo-responsivo {
+			display: none;
+		}
+	
+	}
+
+	
