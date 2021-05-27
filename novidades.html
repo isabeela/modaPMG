@@ -8,11 +8,11 @@
         <link rel="sortcut icon" href="images/icone-logo.png" type="image/png" />
         <link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.css">
         <script src="responsive-nav.js-master/responsive-nav.js"></script>
-
+       
     </head>
     <body>
-        <nav>
-            <img src="images/logo.png" class="logo" alt="Logo Moda PMG">
+        <nav class="novidade-nav">
+            <img src="images/logo.png" class="logo" alt="">
             <ul class="menu-principal">
                 <li><a href="index.html"> Home </a></li>
                 <li><a href="sobre.html"> Sobre  </a></li>
@@ -28,7 +28,7 @@
         </nav>
 
         <div id="menu-hamburguer">
-            <img src="images/logo.png" class="logo-cel" alt="Logo Moda PMG">
+            <img src="images/logo.png" class="logo-cel" alt="">
             <nav class="nav-collapse">
                 <ul>
                     <li> <a href="index.html"> Home </a> </li>
@@ -47,28 +47,35 @@
 
 
         <header>
-           <img src="images/banner-novidades.jpg" class="banner" alt="Banner principal">
-           <img src="images/banner-celular-novidades.jpg" class="banner-celular" alt="Banner">
+           <img src="images/banner-novidades.jpg" class="banner" alt="Banner rosa claro, com detalhes oval em rosa mais escuro e alguns detalhes vazados em preto.
+           Título do Banner é Coleção Outono/Inverno em rosa mais escuro, no mesmo tom dos detalhes em oval, o subtítulo é Coleção para arrasar na estação escrito em preto.
+           Dentro do detalhe oval do lado esquerdo, tem o logo da loja e, do lado direito, uma moça de frente, com as duas mãos na cabeça, de óculos de sol redondo, sorrindo, com cabelo castanho escuro penteado com maria chiquinha de trança. Ela está vestindo um blusão vermelho com calça de couro preta.
+           ">
+           <img src="images/banner-celular-novidades.jpg" class="banner-celular" alt="Banner rosa claro, com detalhes oval em rosa mais escuro e alguns detalhes vazados em preto.
+           Título do Banner é Coleção Outono/Inverno em rosa mais escuro, no mesmo tom dos detalhes em oval, o subtítulo é Coleção para arrasar na estação escrito em preto e dentro do detalhe oval do lado esquerdo, tem o logo da loja">
         </header>
 
         <section id="novidades">
             <h2> Entre em Contato </h2>
             <div class="novidades">
-                
-                <form action="http://hub.fatecrl.edu.br/sobrino/recebe.php" method="post">
+                <form id="formulario">
+                    <label for="nome"> Nome <span> (obrigatório)*</span> </label> <br>
+                    <input type="text"  id="nome" name="nome" size="30" maxlength="30" title="Nome completo"  placeholder="Nome completo" aria-required="true"> 
+               
+                   <label for="email"> E-mail <span> (obrigatório)*</span> </label> <br>
+                    <input type="email" id="email" name="email" size="30" maxlength="30" title="Email"   placeholder=" E-mail" aria-required="true"> 
 
-                   
-                    <label for="nome"> Nome* </label> <br>
-                    <input type="text"  id="nome" name="nome" size="30" maxlength="30" placeholder="Nome completo" required> 
+                    <fieldset><legend> Telefone <span> (obrigatório)*</span> </legend>
+                        <input id="DDD" name="DDD" title="DDD" 
+                        type="tel"  maxlength="2"  placeholder="DDD" aria-required="true" >
+                        <input id="primeirosDigitos" name="primeirosDigitos" 
+                        type="tel" maxlength="5" value="" placeholder="Primeiros dígitos" aria-required="true">
+                        <input id="ultimosDigitos" name="ultimosDigitos" title="Os últimos digitos do seu telefone" 
+                        type="tel" maxlength="4" value="" placeholder="Últimos dígitos" aria-required="true">
+                    </fieldset> 
                
-                    <label for="email"> E-mail* </label> <br>
-                    <input type="email" id="email" name="email" size="30" maxlength="30" placeholder=" E-mail" required> 
-               
-                    <label for="telefone"> Telefone </label> <br>
-                    <input type="tel" id="telefone"  size="30" maxlength="18" placeholder="(xx) xxxx-xxxx">
-               
-                    <label> Cidade </label> <br>
-                    <select name="cidade" autofocus>
+                    <label for="cidade"> Cidade </label> <br>
+                    <select title="Selecione a cidade"  id="cidade" name="cidade">
                         <optgroup label="Litoral Sul"> 
                             <option value="santos"> Santos</option> 
                             <option value="guaruja"> Guarujá </option>
@@ -90,36 +97,37 @@
                         </optgroup>
                         <option value="outra"> Outra</option>
                     </select>
+
         
-                    <label> Como conheceu o site? </label> <br>
-                    <select name="conheceu-site">
-                        <option value="google"> Google </option>
-                        <option value="linkedin"> LinkedIn </option>
-                        <option value="facebook"> Facebook </option>
-                        <option value="instagram"> Instagram </option>
-                        <option value="outros"> Outros </option>
+                    <label for="conhecer"> Como conheceu o site? </label> <br>
+                    <select title="Como conheceu o site" id="conhecer"  name="conheceu-site">
+                        <optgroup label="Como conheceu o site?">
+                            <option value="google"> Google </option>
+                            <option value="linkedin"> LinkedIn </option>
+                            <option value="facebook"> Facebook </option>
+                            <option value="instagram"> Instagram </option>
+                            <option value="outros"> Outros </option>
+                        </optgroup>
                     </select>
                
               
                     <label for="mensagem"> Mensagem </label> <br>
-                    <textarea name="mensagem" id="mensagem" maxlength="100" rows="5" cols="30"> </textarea> 
+                    <textarea name="mensagem" title="Digite sua mensagem"  id="mensagem" maxlength="100" rows="5" cols="30"> </textarea> 
                
-                <div class="check">
-                    <input type="checkbox" name="novidades" id="novidade" value="sim" checked>
-                    <label for="novidade"> Sim, desejo receber as novidades do site </label>
-                </div>
-               
-                    <input type="submit" id="botao" class="botao-enviar centralizar" value="Enviar">
+                        <div class="check">
+                            <input type="checkbox" name="novidades" id="novidade" value="sim" checked>
+                            <label for="novidade"> Sim, desejo receber as novidades do site </label>
+                        </div>  
                
                 </form>
+
+                <div class="alinhar-botao">
+                    <input type="submit" title="Enviar" id="botao" class="botao-enviar centralizar"  alt="Enviar dados"value="Enviar">
+                </div>
                
-            </div>
+            </div> 
         </section>
-
         
-
-
-       
        
         <footer>
             <div class="centralizar-logo">
@@ -127,11 +135,19 @@
             </div>
         </footer>
 
+        <!-- Validação do formulário -->
+
+        <script src="js/script.js"></script>
+        <script src="js/ancora.js"></script>
+        
 
         <!-- Menu Responsivo -->
         <script>
             var nav = responsiveNav(".nav-collapse");
         </script>
+
+        
+        
 
     </body>
 
