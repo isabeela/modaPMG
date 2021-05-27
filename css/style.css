@@ -9,6 +9,10 @@
 
   /* Geral */
 
+  html {
+	scroll-behavior: unset;
+  }
+
   body {
 	  width: auto;
 	  padding: 0;
@@ -34,7 +38,6 @@
 		text-decoration: none;
 		color: #fff;
 	}
-
 	
 
 	nav {
@@ -45,6 +48,10 @@
 		padding: 5px;
 		position: sticky;
 		top: 0;
+	}
+
+	.novidade-nav {
+		position: relative;
 	}
 
 
@@ -168,17 +175,18 @@
 
 	 .botao {
 		border: none;
-		background-color: #d69685;
+		background-color: #823E2B;
 		border-radius: 10px;
 		padding: 15px;
 		font-size: 1rem;
 	}
 
 	 .botao:hover {
-		border: 2px solid #d69685;
+		border: 2px solid #823E2B;
 		border-radius: 10px;
 		background-color: #fff;
-		color: #d69685;
+		color: #823E2B;
+		cursor: pointer;
 	}
 
 	/*Contador */
@@ -256,7 +264,7 @@
 	/* Novidades */
 
 	#receber-novidades {
-		background-color: #d69685;
+		background-color: #823E2B;
 		width: 100%;
 		margin-top: 50px;
 	}
@@ -296,10 +304,11 @@
 
 	.botao-novidade:hover {
 		background-color: #fff;
-		color: #d69685;
+		color: #823E2B;
 		padding: 15px;
 		font-size: 1rem;
 		margin: 10px;
+		cursor: pointer;
 	}
 
 
@@ -326,7 +335,7 @@
 	}
 
 	.borda-img {
-		box-shadow: 15px 15px 0 5px #d69685;
+		box-shadow: 15px 15px 0 5px #823E2B;
 	}
 
 	.assinatura {
@@ -414,16 +423,20 @@
 		padding: 50px;
 	}
 
+	caption {
+		font-size: 2rem;
+	}
+
 	table {
 		margin: 0 auto;
 	}
 	
 	tr {
-		background-color: #f5af9c;
+		background-color: #ecebea;
 	}
 	
 	tr:hover {
-		background-color: #c48a7a;
+		background-color: #bbbbb8;
 		cursor: pointer;
 	}
 	
@@ -433,7 +446,7 @@
 	}
 	
 	.titulo-tabela {
-		background-color: #d69685;
+		background-color: #bbbbb8;
 	}
 	
 
@@ -450,18 +463,43 @@
 		margin: 0 auto;
 	}  
 
-	form {
-		width: 50%;
+	form, .alinhar-botao {
+		width: 70%;
 		margin: 0 auto;
 		padding: 10px;
 	}
 
-	label {
+	 .a-form {
+		color: blue;
+		text-decoration: underline;
+	}
+
+	form fieldset {
 		font-family: "Poppins", sans-serif;
+		border: #823E2B;
+		margin: 0;
+		padding: 0;
+	} 
+
+	form  span {
+		color: red;
+	}
+
+
+	label, form legend {
+		font-family: "Poppins", sans-serif;
+		font-size: 1rem;
+		text-align: left;
+		font-weight: bolder;
+		color: #000;
+	}
+
+	fieldset input {
+		width: 80px;
 	}
 
 	input, textarea, select {
-		border: 1px solid #d69685;
+		border: 1px solid #823E2B;
 		padding: 10px;
 		border-radius: 10px;
 	}
@@ -496,9 +534,9 @@
 	}
 
 	.botao-enviar {
-		border: 2px solid #d69685;
+		border: 2px solid #823E2B;
 		background-color: #fff;
-		color: #d69685;
+		color: #823E2B;
 		border-radius: 10px;
 		padding: 10px;
 		width: 140px;
@@ -510,7 +548,7 @@
 
 	.botao-enviar:hover {
 		color: #fff;
-		background-color: #d69685;
+		background-color: #823E2B;
 		border-radius: 10px;
 		padding: 10px;
 		width: 140px;
@@ -518,7 +556,9 @@
 		font-size: 1rem;
 		font-family: "Poppins", sans-serif;
 		margin: 10px;
+		cursor: pointer;
 	}
+
 
 
 	/* Rodapé */
